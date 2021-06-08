@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    background: url(images/hero_bkgnd.jpg) no-repeat center / cover;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    width: 920px;
+    height: 620px;
+    left: calc(50% - 920px/2);
+    top: calc(50% - 620px/2);
+}
+
+.main-container-box {
+    position: static;
+    width: 900px;
+    height: 600px;
+    left: 10px;
+    top: 10px;
+    background: rgba(120, 155, 151, 0.75);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.25);
+}
+
+.game-board {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+}
+
+.game-board-flex {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.flash-card-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5em 0 0.5em 0;
+}
+
+.flash-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    background: #C4C4C4;
+    border-radius: 10px;
+}
